@@ -1,0 +1,261 @@
+/*reset styles*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/Ubuntu-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../assets/fonts/Ubuntu-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Ubuntu-Italic";
+  src: url("../assets/fonts/Ubuntu-Italic.ttf");
+  font-weight: 400;
+}
+.wraper {
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+/*-----------------------*/
+body {
+  background-color: #808080;
+}
+
+.header {
+  width: 100%;
+  background: linear-gradient(to right, #303030 45%, #808080 45%);
+}
+
+.description-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #303030;
+  align-items: flex-end;
+  padding-right: 30px;
+  font-family: Montserrat;
+  border-radius: 0px 0px 50px 0px;
+}
+
+.description__list {
+  margin-top: 80px;
+}
+
+.list {
+  text-align: end;
+}
+
+.list__item {
+  margin-bottom: 50px;
+}
+
+.list__link {
+  font-size: calc(14px + 4 * (100vw - 320px) / 1600);
+  font-weight: 500;
+  color: #A6A6A6;
+}
+.list__link:hover {
+  color: #ffffff;
+}
+.list__link:hover .icon {
+  border: 2px solid #ffffff;
+}
+
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  text-align: center;
+  padding-top: 10px;
+  color: #ffffff;
+  font-size: 28px;
+  background-color: #A6A6A6;
+  border-radius: 50%;
+}
+
+.description__title {
+  font-weight: 800;
+  font-size: calc(48px + 24 * (100vw - 320px) / 1600);
+  letter-spacing: 7px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.description__subtitle {
+  font-weight: 600;
+  font-size: calc(38px + 18 * (100vw - 320px) / 1600);
+  color: #ffffff;
+  letter-spacing: 3px;
+  color: #A6A6A6;
+  padding-right: 5px;
+}
+
+.description__profession {
+  margin: 80px 0px 80px 0px;
+}
+
+.profession {
+  color: #A6A6A6;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profession__line {
+  width: 256px;
+  height: 5px;
+  background-color: #A6A6A6;
+  border-radius: 2px;
+}
+
+.profession__text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: calc(24px + 8 * (100vw - 320px) / 1600);
+  letter-spacing: 2px;
+}
+
+.avatar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #808080;
+}
+
+.avatar__image-wrap {
+  height: 100%;
+  align-items: center;
+}
+.avatar__image-wrap img {
+  margin-top: 15px;
+  width: calc(300px + 100 * (100vw - 320px) / 1600);
+  height: auto;
+  border: 1px solid #A6A6A6;
+  border-radius: 50px;
+  box-shadow: 12px 25px 52px 0px rgb(166, 166, 166);
+}
+
+@media (min-width: 769px) {
+  .description-wrap {
+    flex-wrap: nowrap;
+  }
+  .description {
+    min-width: 55%;
+  }
+  .avatar {
+    min-width: 45%;
+  }
+}
