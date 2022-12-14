@@ -12,13 +12,21 @@
 
 <body>
 	<div class="wraper">
-		<header class="header" id="header">
+		<header class="header">
 			<div class="container">
 				<div class="description-wrap">
 					<div class="description-wrap__description description">
-						<ul class="description__list list">
+						<nav class="description__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+								<li class="nav__item"><a href="#about-me" class="nav__link">About me</a></li>
+								<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+								<li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+							</ul>
+						</nav>
+						<ul class="description__list list" id="contacts">
 							<li class="list__item">
-								<a href="https://discord.gg/txZPSnD8kH" class="list__link">Discord: alexei-iacovlev#6241
+								<a href="https://discord.gg/txZPSnD8kH" class="list__link"> Discord: alexei-iacovlev#6241
 									<span class="_icon-discord icon"></span></a>
 							</li>
 							<li class="list__item">
@@ -50,7 +58,7 @@
 				<div class="columns-wrap">
 					<section class="left-column">
 						<div class="content">
-							<h3 class="content__title title">About Me</h3>
+							<h3 class="content__title title" id="about-me">About Me</h3>
 							<div class="content__line line"></div>
 							<p class="content__text text">
 								I am interested in web development because this profession provides endless opportunities for
@@ -62,7 +70,7 @@
 							</p>
 						</div>
 						<div class="content">
-							<h3 class="content__title title">Skills</h3>
+							<h3 class="content__title title" id="skills">Skills</h3>
 							<div class="content__line line"></div>
 							<ul class="content__list content__text">
 								<li>HTML</li>
@@ -96,7 +104,7 @@
 						</div>
 					</section>
 					<section class="right-column">
-						<h2 class="overhead">Experience</h2>
+						<h2 class="overhead" id="experience">Experience</h2>
 						<div class="content">
 							<h3 class="content__title">Education</h3>
 							<div class="content__line"></div>
