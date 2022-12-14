@@ -162,7 +162,99 @@ body {
 		box-shadow: 12px 25px 52px 0px rgba(166, 166, 166, 1);
 	}
 }
+.main{	
+	width: 100%;	
+	margin-top: 50px;   
+   background: linear-gradient(to right, #303030 45%, #ffffff 45%);	
+}
 
+.columns-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.left-column {		
+	background-color: #303030;
+	border-radius: 0px 50px 50px 0px;
+	color: #ffffff;
+	padding: 0px 30px 50px 10px;	
+	width: 100%;	
+}
+.right-column{			
+	color: #000000;	
+	padding: 0px 5px 0px 5px;
+	width: 100%;
+	background-color: #ffffff;
+}
+.content {
+	font-family: 'Ubuntu';	
+	font-weight: 400;
+}
+.content__title {
+	margin: 100px 0px 0px 0px;
+	font-family: Montserrat;
+	font-weight: 700;
+	//font-size: 36px;
+	font-size: calc(28px + (36 - 28) * ((100vw - 320px) / (1920 - 320))); 
+   letter-spacing: 9px;	
+	text-transform: uppercase;	
+}
+.content__line {
+	margin: 40px 0px 40px 0px;
+	width: 100%;
+	height: 3px;
+	background-color: #A6A6A6;
+}
+.content__text {	
+	font-size: 20px;
+	font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320))); 
+	line-height: 2.2;
+	span{
+		font-family: 'Ubuntu-Italic';
+	}
+}
+.content__list{	
+	li{
+		span{
+			font-family: 'Ubuntu-Italic';	
+		}
+		&::before{
+			content: '•';
+			padding-right: 10px;
+		}
+	}
+}
+.content__code{	
+	min-width: 300px;	
+	font-family: 'Ubuntu';	
+	font-weight: 400;
+	//font-size: 18px;
+	font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320))); 
+	background-color: #545454;
+	padding-bottom: 10px;	
+	border-radius: 30px;
+	code {
+		width: inherit;
+	}
+}
+.overhead{
+	font-family: Montserrat;
+	font-weight: 800;
+	font-size: 42px;
+	font-size: calc(32px + (42 - 32) * ((100vw - 320px) / (1920 - 320))); 
+   letter-spacing: 9px;	
+	text-transform: uppercase;	
+	margin-top: 80px;	
+}
+
+@media (min-width: 875px){
+	.left-column {		
+		width: 55%;	
+	}
+	.right-column{
+		width: 45%;
+	}
+}
 @media (min-width: 769px) {
 	.description-wrap{
 		flex-wrap: nowrap;		
@@ -172,6 +264,10 @@ body {
 	}
 	.avatar {
 		min-width: 45%;			
-	}	
-	
+	}		
+}
+@media (min-width: 376px){	
+	.right-column{			
+		padding: 0px 5px 0px 50px;	
+	}
 }
