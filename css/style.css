@@ -196,6 +196,10 @@ body {
 
 .list__item {
   margin-bottom: 50px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
 }
 
 .list__link {
@@ -229,6 +233,10 @@ body {
   letter-spacing: 7px;
   color: #ffffff;
   margin-bottom: 20px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
 }
 
 .description__subtitle {
@@ -238,10 +246,18 @@ body {
   letter-spacing: 3px;
   color: #A6A6A6;
   padding-right: 5px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
 }
 
 .description__profession {
   margin: 80px 0px 80px 0px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
 }
 
 .profession {
@@ -276,6 +292,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
 }
 .avatar__image-wrap img {
   margin: 20px 0px 0px 0px;
@@ -316,6 +336,15 @@ body {
 .content {
   font-family: "Ubuntu";
   font-weight: 400;
+  opacity: 0;
+}
+
+.content._active {
+  opacity: 1;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp;
 }
 
 .content__title {
@@ -359,9 +388,18 @@ body {
   background-color: #545454;
   padding-bottom: 10px;
   border-radius: 30px;
+  opacity: 0;
 }
 .content__code code {
   width: inherit;
+}
+
+.content__code._active {
+  opacity: 1;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
 }
 
 .overhead {
@@ -372,6 +410,15 @@ body {
   letter-spacing: 9px;
   text-transform: uppercase;
   margin-top: 80px;
+  opacity: 0;
+}
+
+.overhead._active {
+  opacity: 1;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slideInRight;
+          animation-name: slideInRight;
 }
 
 .footer {
@@ -460,5 +507,77 @@ body {
 @media (min-width: 376px) {
   .right-column {
     padding: 0px 5px 0px 50px;
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }
