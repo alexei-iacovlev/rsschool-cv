@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/iconfonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>CV</title>
+</head>
+
+<body>
+	<div class="wraper">
+		<header class="header">
+			<div class="container">
+				<div class="description-wrap">
+					<div class="description-wrap__description description">
+						<nav class="description__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item "><a href="#contacts" class="nav__link">Contacts</a></li>
+								<li class="nav__item"><a href="#about-me" class="nav__link">About me</a></li>
+								<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+								<li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+							</ul>
+						</nav>
+						<ul class="description__list list" id="contacts">
+							<li class="list__item ">
+								<a href="https://discord.gg/txZPSnD8kH" class="list__link"> Discord: alexei-iacovlev#6241
+									<span class="_icon-discord icon"></span></a>
+							</li>
+							<li class="list__item">
+								<a href="https://mail.google.com/mail" class="list__link">Email: alexei.iacov@gmail.com <span
+										class="_icon-mail icon"></span></a>
+							</li>
+							<li class="list__item">
+								<a href="https://github.com/alexei-iacovlev" class="list__link">GitHub: alexei-iacovlev <span
+										class="_icon-github icon"></span></a>
+							</li>
+						</ul>
+						<h1 class="description__title">Aleksey</h1>
+						<h2 class="description__subtitle">Yakovlev</h2>
+						<div class="description__profession profession">
+							<div class="profession__line"></div>
+							<p class="profession__text">web developer</p>
+						</div>
+					</div>
+					<div class="description-wrap__avatar avatar">
+						<div class="avatar__image-wrap">
+							<img src="./assets/img/avatar.jpg" alt="avatar">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="columns-wrap">
+					<section class="left-column">
+						<div class="content _anim-items _anim-no-hide">
+							<h3 class="content__title title" id="about-me">About Me</h3>
+							<div class="content__line line"></div>
+							<p class="content__text text">
+								I am interested in web development because this profession provides endless opportunities for
+								professional growth. In my free time, I study layout, JS programming language, as well as other
+								abilities that are necessary for mastering the profession of a Frontend developer. I believe
+								that
+								my
+								ability to learn and acquire new skills will help me become an experienced Frontend Developer.
+							</p>
+						</div>
+						<div class="content _anim-items _anim-no-hide">
+							<h3 class="content__title title" id="skills">Skills</h3>
+							<div class="content__line line"></div>
+							<ul class="content__list content__text">
+								<li>HTML</li>
+								<li>CSS/SASS</li>
+								<li>JavaScript (<span>Basic</span>)</li>
+								<li>Git</li>
+							</ul>
+						</div>
+						<div class="content _anim-items _anim-no-hide">
+							<h3 class="content__title title">Code Example</h3>
+							<div class="content__line line"></div>
+							<pre class="content__code _anim-items _anim-no-hide"> <code>
+ function pow(x, n) {
+  let result = x;
+  for (let i = 1; i &lt; n; i++)
+  {result *= x;}
+
+  return result;
+	}
+								 
+ let x = prompt("x?", '');
+ let n = prompt("n?", '');
+								 
+ if (n &lt; 1) {
+ alert(`Степень ${n} 
+не поддерживается, 
+используйте натуральное число`);
+	} else
+{alert( pow(x, n) );}
+							</code></pre>
+						</div>
+					</section>
+					<section class="right-column">
+						<h2 class="overhead _anim-items _anim-no-hide" id="experience">Experience</h2>
+						<div class="content _anim-items _anim-no-hide">
+							<h3 class="content__title">Education</h3>
+							<div class="content__line"></div>
+							<p class="content__text">
+								University: Chuvash State University
+							</p>
+						</div>
+						<div class="content _anim-items _anim-no-hide">
+							<h3 class="content__title">Courses</h3>
+							<div class="content__line"></div>
+							<ul class="content__list content__text">
+								<li>ITMO Course «Web developer» (<span>completed</span>)</li>
+								<li>JavaScript Manual on learnjavascript.ru (<span>in progress</span>)</li>
+								<li>RS Schools Course «JavaScript/Front-end. Stage 0» (<span>in progress</span>)</li>
+							</ul>
+						</div>
+						<div class="content _anim-items _anim-no-hide">
+							<h3 class="content__title">English</h3>
+							<div class="content__line"></div>
+							<p class="content__text">
+								A1 (<span>A2 in progress</span>)
+							</p>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="enwall">
+					<div class="enwall__line"></div>
+					<div class="enwall__content">
+						<p>© 2022 by Aleksey Yakovlev</p>
+						<p><a href="https://github.com/alexei-iacovlev"> Github <span
+									class="_icon-github footer-icon"></span></a>
+						</p>
+						<p> <a href="https://rs.school/js/"><img src="./assets/img/rslogo.svg" alt="rsschool-logo"
+									class="rslogo"></a> </p>
+					</div>
+					<div class="enwall__line"></div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- up button -->
+	<a href="#" id="toTop">
+		<svg width="10pt" height="10pt" viewBox="0 0 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<g>
+				<g>
+					<path
+						d="M489.229,442.468L254.563,37.135c-3.797-6.592-14.677-6.592-18.453,0L1.443,442.468c-1.92,3.307-1.92,7.36-0.021,10.667
+			  c1.92,3.307,5.44,5.333,9.259,5.333h469.333c3.819,0,7.339-2.027,9.259-5.333C491.128,449.849,491.128,445.775,489.229,442.468z" />
+				</g>
+			</g>
+		</svg>
+	</a>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
